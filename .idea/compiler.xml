@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringBoot-Thymeleaf" />
+        <module name="SpringBoot-jsp" />
+        <module name="SpringBoot-Druid" />
+        <module name="SpringBoot-Junit" />
+        <module name="SpringBoot-error" />
+        <module name="SpringBoot-Exception" />
+        <module name="SpringBoot_SpringMVC" />
+        <module name="SpringBoot_MyBatis" />
+        <module name="SpringBoot-PageHelper" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBoot-Druid" options="" />
+    </option>
+  </component>
+</project>

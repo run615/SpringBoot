@@ -1,0 +1,6 @@
+com/wangxs/controller/PersonController.class
+com/wangxs/JunitApplication.class
+com/wangxs/pojo/Person.class
+com/wangxs/service/impl/PersonServiceImpl.class
+com/wangxs/mapper/PersonMapper.class
+com/wangxs/service/PersonService.class

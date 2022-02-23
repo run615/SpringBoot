@@ -1,0 +1,24 @@
+2022-02-22 22:47:14.000 [main] INFO  com.wangxs.DruidApplication - Starting DruidApplication on terminus-3.local with PID 37247 (started by wangxs in /Users/wangxs/Desktop/保持学习/SpringBoot)
+2022-02-22 22:47:14.004 [main] INFO  com.wangxs.DruidApplication - No active profile set, falling back to default profiles: default
+2022-02-22 22:47:15.262 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8866 (http)
+2022-02-22 22:47:15.275 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8866"]
+2022-02-22 22:47:15.288 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-02-22 22:47:15.289 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-02-22 22:47:15.438 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-02-22 22:47:15.439 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1376 ms
+2022-02-22 22:47:15.591 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2022-02-22 22:47:16.429 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2022-02-22 22:47:16.780 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-22 22:47:16.979 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8866"]
+2022-02-22 22:47:17.009 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8866 (http) with context path ''
+2022-02-22 22:47:17.012 [main] INFO  com.wangxs.DruidApplication - Started DruidApplication in 3.615 seconds (JVM running for 4.782)
+2022-02-22 22:47:49.586 [http-nio-8866-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-22 22:47:49.586 [http-nio-8866-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-02-22 22:47:49.593 [http-nio-8866-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2022-02-22 22:47:49.635 [http-nio-8866-exec-1] DEBUG o.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2022-02-22 22:47:49.641 [http-nio-8866-exec-1] DEBUG com.wangxs.mapper.PersonMapper.selectAll - ==>  Preparing: select * from person
+2022-02-22 22:47:49.853 [http-nio-8866-exec-1] DEBUG com.wangxs.mapper.PersonMapper.selectAll - ==> Parameters: 
+2022-02-22 22:47:49.885 [http-nio-8866-exec-1] DEBUG com.wangxs.mapper.PersonMapper.selectAll - <==      Total: 6
+2022-02-22 22:49:17.372 [Thread-9] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-02-22 22:49:17.373 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2022-02-22 22:49:17.381 [Thread-9] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed

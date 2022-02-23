@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<!--为了有提示，修改html页面中<html>标签为：http://www.thymeleaf.org-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>姓名</td><td>年龄</td>
+        </tr>
+        <tr th:each="person:${list}">
+            <!--获取session作用域内容-->
+            <td th:text="${person.getName()}"></td>
+            <td th:text="${person.getAge()}"></td>
+        </tr>
+    </table>
+
+<!--th:text属性 向html标签内部输出信息-->
+<!--直接向标签内部填充数据，清空原有内容-->
+<span th:text="asd">span标签</span>
+<span th:text="${str}"></span>
+<!--从作用域中获取输入到标签内部-->
+<span th:text="${session.person}"></span>
+<span th:text="${session.person} != '李四'">值不等于李四</span>
+<br/>
+
+<a href="/index?id=3&name=lisi">提交李四</a>
+<a href="@{/index(if=3,name=zhangsan)}">提交张三</a>
+<a href="@{/index(id=4,name=${person}">提交运维组</a>
+
+</body>
+</html>

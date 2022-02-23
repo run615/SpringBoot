@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!--为了有提示，修改html页面中<html>标签为：http://www.thymeleaf.org-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<table>
+    <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+        <td>电话</td>
+    </tr>
+
+    <tr th:each="person:${pageinfo.list}">
+        <td th:text="${person.name}"></td>
+        <td th:text="${person.age}"></td>
+        <td th:text="${person.phone}"></td>
+    </tr>
+</table>
+
+<div th:if="!${pageinfo.isFirstPage}">
+    <a th:href="@{/showpage(pageindex=1)}">首页</a>
+    <a th:href="@{/showpage(pageindex=${pageinfo.prePage})}">上一页</a>
+</div>
+
+<div th:if="!${pageinfo.isLastPage}">
+    <a th:href="@{/showpage(pageindex=${pageinfo.nextPage})}">下一页</a>
+    <a th:href="@{/showpage(pageindex=${pageinfo.pages})}">尾页</a>
+</div>
+
+
+</body>
+</html>
